@@ -20,7 +20,6 @@ function App() {
 
   // useStates
   const [currentIndex, setCurrentIndex] = useState(0);
-  // const [autoPlay, setAutoPlay] = useState(null)
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -35,13 +34,7 @@ function App() {
   };
 
   // autoplay logic
-  // UseEffect
-  // useEffect(() => {
-  //   timeOut = 
-  //     autoPlay && setTimeout(() => {
-  //       nextSlide();
-  //     }, 2500);
-  // })
+  
 
   return (
     <div className='flex max-w-full w-screen h-screen relative group'>
