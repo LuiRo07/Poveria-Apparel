@@ -11,6 +11,9 @@ function App() {
     }, 
     {
       url: 'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
+    {
+      url: 'https://plus.unsplash.com/premium_photo-1682096572836-9f77d9b32c25?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     }
   ]
 
@@ -29,7 +32,7 @@ function App() {
   };
 
   return (
-    <div className='max-w-full h-[780px] w-screen m-auto py-16 px-4 relative group border-2 border-red-800'>
+    <div className='flex max-w-full w-screen h-screen relative group'>
       <div 
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='transition-all w-full h-full bg-center bg-cover duration-500'
