@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -17,7 +18,9 @@ function App() {
     }
   ]
 
+  // useStates
   const [currentIndex, setCurrentIndex] = useState(0);
+  // const [autoPlay, setAutoPlay] = useState(null)
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -26,10 +29,19 @@ function App() {
   }
 
   const nextSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? 0 : currentIndex - 1;
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
+  // autoplay logic
+  // UseEffect
+  // useEffect(() => {
+  //   timeOut = 
+  //     autoPlay && setTimeout(() => {
+  //       nextSlide();
+  //     }, 2500);
+  // })
 
   return (
     <div className='flex max-w-full w-screen h-screen relative group'>
