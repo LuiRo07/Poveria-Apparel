@@ -43,7 +43,7 @@ function Header({ currentIndex }) {
   if (currentIndex === 1) {
     return <h1 className="basis-2/4 text-5xl">Exclusive Cool Summer</h1>
   } else {
-    return <h1 className="basis-2/4 text-5xl">Exclusive Spring Collection</h1>
+    return <h1 className="basis-2/4 text-5xl">Exclusive Spring</h1>
   }
 }
   
