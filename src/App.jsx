@@ -35,7 +35,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       nextSlide();
-    }, 2500)
+    }, 5000)
   })
 
 // header component
