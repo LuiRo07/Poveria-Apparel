@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FaStar } from 'react-icons/fa';
+import { CiStar } from 'react-icons/ci';
 
 const ProductCard = ({ product }) => {
   const [hovered, setHovered] = React.useState(false);
@@ -14,17 +16,37 @@ const ProductCard = ({ product }) => {
 
   return (
     <div
-      className="bg-white rounded-lg shadow-md p-4 max-w-sm cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      className="group overflow-y-hidden"
     >
-      <img
+      {/* <img 
         src={hovered? product.imageHover : product.imageDefault}
         alt={product.name}
-        className="w-full h-auto object-cover object-center rounded-lg mb-4"
+        className="2-full h-auto object-cover object-center rounded-lg mb-4"
+      /> */}
+
+      {/* testing purpose */}
+      <img
+        src={product.imageDefault}
+        alt={product.name}
+        className="w-full h-auto object-cover object-center rounded-lg ease-in cursor-pointer"
       />
+
+      <img
+        src={product.imageHover}
+        alt={product.name}
+        className="hidden w-full h-auto object-cover object-center rounded-lg z-10 cursor-pointer -translate-y-full -translate-x-full group-hover:ease-in group-hover:duration-500 group-hover:translate-x-[0%]"
+      />
+
+      <ul className='flex'>
+        <li><FaStar /></li>
+        <li><FaStar /></li>
+        <li><FaStar /></li>
+        <li><CiStar /></li>
+        <li><CiStar /></li>
+      </ul>
       <h2 className="text-lg font-medium text-gray-900 mb-2">{product.name}</h2>
-      <p className="text-gray-500 mb-4">{product.description}</p>
       <p className="text-xl font-medium text-gray-900">${product.price}</p>
     </div>
   );
@@ -33,7 +55,6 @@ const ProductCard = ({ product }) => {
 ProductCard.propTypes = {
   product: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     imageDefault: PropTypes.string.isRequired,
     imageHover: PropTypes.string.isRequired
