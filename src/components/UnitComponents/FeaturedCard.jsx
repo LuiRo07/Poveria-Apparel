@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FaStar } from 'react-icons/fa';
 import { CiStar } from 'react-icons/ci';
 
-ProductCar.propTypes = {
+FeaturedCard.propTypes = {
     product: PropTypes.shape({
         name: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,

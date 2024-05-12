@@ -1,6 +1,7 @@
 // components
 import SectionTitle from '../UnitComponents/Title';
 import ProductCard from '../UnitComponents/ProductCard';
+import FeaturedCard from '../UnitComponents/FeaturedCard';
 
 // images
 import blueScarf from '../../assets/images/products/apparel/scarf.jpg';
