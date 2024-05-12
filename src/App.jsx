@@ -4,6 +4,7 @@ import CardProducts from './components/SectionComponents/OurProducts';
 import QuoteSlider from './components/SectionComponents/QuoteSlider';
 import CategoryList from './components/SectionComponents/CategoryList';
 import FeaturedSection from './components/SectionComponents/Featured';
+import FromTheBlog from './components/SectionComponents/FromTheBlog';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <QuoteSlider />
       <CategoryList />
       <FeaturedSection />
+      <FromTheBlog />
     </div>
   )
 }

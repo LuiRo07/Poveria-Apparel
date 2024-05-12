@@ -13,7 +13,7 @@ import jeans from '../../assets/images/products/apparel/women-jeans.jpg';
 import trenchCoat from '../../assets/images/products/apparel/women-trenchCoat.jpg';
 import denimSweater from '../../assets/images/products/apparel/denim-sweater.jpg';
 
-const newProducts = [
+const products = [
     {
         name: "Blue Scarf",
         price: 33.99,
@@ -44,13 +44,16 @@ function FeaturedSection() {
 
     return (
         <div>
-            <div>
             <SectionTitle title={"Featured"} />
-                {newProducts.map((product) => {
-                    <ProductCard key={product.name} product={product} />
-                })}
-
+            <div className="grid grid-cols-4 p-12 gap-6">
+                <img src={products[0].imageDefault} />
+                <img src={products[1].imageDefault} />
+                <img src={products[2].imageDefault} />
+                <img src={products[3].imageDefault} />
             </div>
+            {/* {products.map((product) => {
+                <FeaturedCard key={product.name} product={product} />
+            })} */}
         </div>
     )
 }

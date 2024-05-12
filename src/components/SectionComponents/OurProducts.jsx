@@ -55,7 +55,7 @@ const products = [
       imageHover: backPack
     },
     {
-      name: 'Men Shirt',
+      name:'Women Shirt',
       price: 19.99,
       imageDefault: pocketShirt,
       imageHover: polkaDotSkirt
@@ -71,11 +71,12 @@ function CardProducts() {
             <li><a className="text-slate-600 hover:text-black" href="#">Bestseller</a></li>
             <li><a className="text-slate-600 hover:text-black" href="#">Special</a></li>
           </ul>
-          <div className="grid lg:grid-cols-4 grid-rows-2 md:grid-cols-3 sm:grid-cols-2 gap-2 p-12">
-            {products.map((product) => (
 
-              <ProductCard key={product.name} product={product} />
-            ))}
+          {/* images are mapped */}
+          <div className="grid lg:grid-cols-4 grid-rows-2 md:grid-cols-3 sm:grid-cols-2 gap-2 p-12">
+          {products.map((product) => (
+            <ProductCard key={product.name} product={product} />
+          ))}
           </div>
         </div>
       );
