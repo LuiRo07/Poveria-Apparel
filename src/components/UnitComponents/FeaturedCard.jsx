@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FaStar } from 'react-icons/fa';
 import { CiStar } from 'react-icons/ci';
 
-function FeaturedCard({ product }) {
+const FeaturedCard = ({ product }) => {
 
     return (
         <div>
@@ -12,8 +12,8 @@ function FeaturedCard({ product }) {
                     alt={product.name}
                 />
             </div>
-            <div>
-                <img src={product.imageHover} />
+            <div className="mb-4">
+                <img className="hidden" src={product.imageHover} />
             </div>
             <ul className="flex">
                 <li><FaStar /></li>
@@ -23,14 +23,14 @@ function FeaturedCard({ product }) {
                 <li><CiStar /></li>
             </ul>
             <h2 className="text-lg font-medium text-gray-900 mb-2">{product.name}</h2>
-            <p className="text-xl font-medium text-gray-900">{product.price}</p>
+            <p className="text-xl font-medium text-gray-900">${product.price}</p>
         </div>
     )
 }
 
 FeaturedCard.propTypes = {
     product: PropTypes.shape({
-      name: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
       price: PropTypes.number.isRequired,
       imageDefault: PropTypes.string.isRequired,
       imageHover: PropTypes.string.isRequired

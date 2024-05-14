@@ -1,7 +1,7 @@
 // components
 import SectionTitle from '../UnitComponents/Title';
-import ProductCard from '../UnitComponents/ProductCard';
 import FeaturedCard from '../UnitComponents/FeaturedCard';
+import { BsChevronCompactLeft, BsCheronCompactRight} from 'react-icons/bs';
 
 // images
 import blueScarf from '../../assets/images/products/apparel/scarf.jpg';
@@ -15,25 +15,25 @@ import denimSweater from '../../assets/images/products/apparel/denim-sweater.jpg
 
 const products = [
     {
-        name: "Blue Scarf",
+        id: 1,
         price: 33.99,
         imageDefault: blueScarf,
         imageHover: watch
     },
     {
-        name: "Blue Scarf",
+        id: 2,
         price: 33.99,
         imageDefault: pocketShirt,
         imageHover: whiteShoes
     },
     {
-        name: "Blue Scarf",
+        id: 3,
         price: 33.99,
         imageDefault: greySkirt,
         imageHover: jeans
     },
     {
-        name: "Blue Scarf",
+        id: 4,
         price: 33.99,
         imageDefault: trenchCoat,
         imageHover: denimSweater
@@ -45,15 +45,17 @@ function FeaturedSection() {
     return (
         <div>
             <SectionTitle title={"Featured"} />
-            <div className="grid grid-cols-4 p-12 gap-6">
-                <img src={products[0].imageDefault} />
-                <img src={products[1].imageDefault} />
-                <img src={products[2].imageDefault} />
-                <img src={products[3].imageDefault} />
+            <div className="block absolute top-[50%] -translate-x-0 translate-y-[-50%] text-2xl cursor-pointer text-slate-500">
+                <BsChevronCompactLeft size={30} />
             </div>
-            {/* {products.map((product) => {
+            <div className="grid grid-cols-4 p-12 gap-6">
+            {products.map((product) => (
                 <FeaturedCard key={product.name} product={product} />
-            })} */}
+            ))}
+            </div>
+            <div className="block absolute top-[50%] -translate-x-0 translate-y-[-50%] text-2xl cursor-pointer text-slate-500">
+                <BsCheronCompactRight size={30} />
+            </div>
         </div>
     )
 }

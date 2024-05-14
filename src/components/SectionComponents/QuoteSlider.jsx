@@ -41,21 +41,6 @@ function QuoteSlider() {
             </div>
     </Slider>
     )
-
-    // return (
-    //     <div className="bg-[#F2F2F2] h-[30vh] flex justify-center items-center w-full">
-    //         <Slider {...settings}>
-    //             <div className="flex">
-    //                 <h3 className="text-3xl">Very Good Designing, Flexible. Best Fits</h3>
-    //                 <span>Tom (Web Developer)</span>
-    //             </div>
-    //             <div className="flex">
-    //                 <h3 className="text-3xl">Another good design</h3>
-    //                 <span>Tom (Web Developer)</span>
-    //             </div>
-    //         </Slider>
-    //     </div>
-    // )
 }
 
 export default QuoteSlider
