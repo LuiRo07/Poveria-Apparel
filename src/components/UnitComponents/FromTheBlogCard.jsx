@@ -7,3 +7,5 @@ function FromTheBlogCard() {
         </div>
     )
 }
+
+export default FromTheBlogCard
