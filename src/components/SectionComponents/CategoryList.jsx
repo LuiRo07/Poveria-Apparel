@@ -46,7 +46,7 @@ function Image({imageSource, alternativeText }) {
 
 function CategoryList() {
     return (
-        <div className="my-10 h-[50vh] border-4 grid grid-cols-3 p-7 gap-24">
+        <div className="my-10 h-[50vh] grid grid-cols-3 p-7 gap-24">
             <div style={backgroundDiv1} className="h-full bg-transparent bg-no-repeat bg-cover bg-center flex justify-center items-center group">
                 <div className="group-hover:visible group-hover:transition-all hidden p-2 bg-slate-50/40">
                     <h2>Women's Clothes</h2>

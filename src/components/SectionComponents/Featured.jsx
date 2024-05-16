@@ -1,7 +1,9 @@
 // components
 import SectionTitle from '../UnitComponents/Title';
 import FeaturedCard from '../UnitComponents/FeaturedCard';
-import { BsChevronCompactLeft, BsCheronCompactRight} from 'react-icons/bs';
+import { BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 // images
 import blueScarf from '../../assets/images/products/apparel/scarf.jpg';
@@ -15,46 +17,75 @@ import denimSweater from '../../assets/images/products/apparel/denim-sweater.jpg
 
 const products = [
     {
-        id: 1,
+        name: "Coral Double Stripe High",
         price: 33.99,
         imageDefault: blueScarf,
         imageHover: watch
     },
     {
-        id: 2,
+        name: "Navy White Stripe Furschia Shirt",
         price: 33.99,
         imageDefault: pocketShirt,
         imageHover: whiteShoes
     },
     {
-        id: 3,
+        name: "Linen-grey Long Skirt",
         price: 33.99,
         imageDefault: greySkirt,
         imageHover: jeans
     },
     {
-        id: 4,
+        name: "Winter Trench Coat",
         price: 33.99,
         imageDefault: trenchCoat,
         imageHover: denimSweater
+    },
+    {
+        name: "Spring Shoes",
+        price: 55.99,
+        imageDefault: whiteShoes,
+        imageHover: watch
     }
 ]
 
+
 function FeaturedSection() {
+
+    const responsive = {
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 4,
+          slidesToSlide: 4
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 3,
+          SlidesToSlide: 3
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
+
+      
 
     return (
         <div>
             <SectionTitle title={"Featured"} />
-            <div className="block absolute top-[50%] -translate-x-0 translate-y-[-50%] text-2xl cursor-pointer text-slate-500">
-                <BsChevronCompactLeft size={30} />
-            </div>
-            <div className="grid grid-cols-4 p-12 gap-6">
-            {products.map((product) => (
-                <FeaturedCard key={product.name} product={product} />
-            ))}
-            </div>
-            <div className="block absolute top-[50%] -translate-x-0 translate-y-[-50%] text-2xl cursor-pointer text-slate-500">
-                <BsCheronCompactRight size={30} />
+            <div>
+                <div className="invisible group-hover:visible group-hover:self-center top-[50%] text-2xl cursor-pointer text-slate-500">
+                    <BsChevronCompactLeft size={30} />
+                </div>
+                <Carousel responsive={responsive} className="px-20">
+                    {products.map((product) => (
+                        <FeaturedCard key={product.name} product={product} />
+                    ))}
+                </Carousel>
+                
+                <div className="invisible group-hover:visible group-hover:self-center top-[50%] text-2xl cursor-pointer text-slate-500">
+                    <BsChevronCompactRight size={30} />
+                </div>
             </div>
         </div>
     )

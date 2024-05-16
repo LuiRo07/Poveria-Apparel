@@ -21,9 +21,9 @@ function ProductCard({ imageUrl, imageAlt, title }) {
 function ServiceIcon({imageUrl, imageAlt, title, subTitle}) {
     return (
             <div className="flex items-center">
-                <a href="#">
-                    <img className="hover:bg-black/50 hover:text-slate-100 bg-slate-600/25 rounded-full size-16 p-4 mr-4" src={imageUrl} alt={imageAlt} />
-                </a>
+                <div>
+                    <img className="hover:bg-black/50 hover:text-slate-100 bg-slate-600/25 rounded-full size-16 p-4 mr-4 cursor-pointer" src={imageUrl} alt={imageAlt} />
+                </div>
                 <div className="ltr:ml-9">
                     <h3>{title}</h3>
                     <p>{subTitle}</p>

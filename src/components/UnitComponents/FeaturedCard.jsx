@@ -30,7 +30,7 @@ const FeaturedCard = ({ product }) => {
 
 FeaturedCard.propTypes = {
     product: PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
       price: PropTypes.number.isRequired,
       imageDefault: PropTypes.string.isRequired,
       imageHover: PropTypes.string.isRequired
