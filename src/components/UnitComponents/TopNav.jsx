@@ -7,7 +7,7 @@ function toggleDropDownMenu () {
 
 function TopNav() {
     return (
-        <div className="top-header w-full h-[10vh] border-b-2 flex justify-around items-center px-11">
+        <div className="top-header border-b-2 flex justify-around items-center py-5">
             <ul className="top-left inline-flex">
                 <li className="hover:text-slate-900 text-slate-600 mr-8"><a href="#">My Wishlist (0)</a></li>
                 <li className="hover:text-slate-900 text-slate-600 border-l-2 pl-8"><a href="#">Compare</a></li>

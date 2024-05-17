@@ -31,7 +31,7 @@ function FooterLinks() {
                 <li>
                     <form>
                         <div>
-                        <img className="relative" src="./src/assets/icons/send.png" alt="send icon" />
+                        <img className="relative left-[186px] top-[36px] cursor-pointer" src="./src/assets/icons/send.png" alt="send icon" />
                         <input type="text" placeholder="Enter Your Email" className="px-6 py-2 rounded-full" />
                         </div>
                     </form>
