@@ -73,7 +73,7 @@ function CardProducts() {
           </ul>
 
           {/* images are mapped */}
-          <div className="grid lg:grid-cols-4 grid-rows-2 md:grid-cols-3 sm:grid-cols-2 gap-2 p-12">
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 p-12">
           {products.map((product) => (
             <ProductCard key={product.name} product={product} />
           ))}

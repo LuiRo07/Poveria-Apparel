@@ -8,7 +8,7 @@ import rocketShipIcon from '../../assets/icons/startup.png';
 
 function ProductCard({ imageUrl, imageAlt, title }) {
     return (
-        <div className="p-2 inline-flex rounded-sm bg-slate-200 overflow-hidden cursor-pointer w-[350px]">
+        <div className="p-2 inline-flex rounded-sm bg-slate-200 overflow-hidden cursor-pointer">
             <div className="ltr:mr-1 self-center">
                 <h3 className="font-semibold mb-4 text-2xl">{title}</h3>
                 <a href="#" className="underline">VIEW MORE</a>

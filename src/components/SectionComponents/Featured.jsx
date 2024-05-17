@@ -74,18 +74,11 @@ function FeaturedSection() {
         <div>
             <SectionTitle title={"Featured"} />
             <div>
-                <div className="invisible group-hover:visible group-hover:self-center top-[50%] text-2xl cursor-pointer text-slate-500">
-                    <BsChevronCompactLeft size={30} />
-                </div>
                 <Carousel responsive={responsive} className="px-20">
                     {products.map((product) => (
                         <FeaturedCard key={product.name} product={product} />
                     ))}
                 </Carousel>
-                
-                <div className="invisible group-hover:visible group-hover:self-center top-[50%] text-2xl cursor-pointer text-slate-500">
-                    <BsChevronCompactRight size={30} />
-                </div>
             </div>
         </div>
     )

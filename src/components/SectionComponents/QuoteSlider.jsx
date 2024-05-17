@@ -8,9 +8,12 @@ function QuoteSlider() {
     var settings = {
         dots: false,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        speed: 2500,
+        autoplaySpeed: 5000,
+        cssEase: "linear"
       };
 
       const divStyling = "py-20 gap-10 flex flex-col justify-center items-center bg-gray-600/50 text-slate-";

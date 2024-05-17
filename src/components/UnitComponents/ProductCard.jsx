@@ -4,6 +4,10 @@ import { FaStar } from 'react-icons/fa';
 import { CiStar } from 'react-icons/ci';
 
 const ProductCard = ({ product }) => {
+  const defaultStyling = {
+    styling: ""
+  }
+
   const [hovered, setHovered] = React.useState(false);
 
   const handleMouseEnter = () => {
@@ -18,25 +22,21 @@ const ProductCard = ({ product }) => {
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="group overflow-y-hidden"
+      className="group overflow-y-hidden lg:px-20 md:px-4 x-sm:px-2"
     >
-      {/* <img 
+
+      <img 
         src={hovered? product.imageHover : product.imageDefault}
         alt={product.name}
         className="2-full h-auto object-cover object-center rounded-lg mb-4"
-      /> */}
+      />
 
       {/* testing purpose */}
-      <img
-        src={product.imageDefault}
-        alt={product.name}
-        className="w-full h-auto object-cover object-center rounded-lg ease-in cursor-pointer"
-      />
 
       <img
         src={product.imageHover}
         alt={product.name}
-        className="hidden w-full h-auto object-cover object-center rounded-lg z-10 cursor-pointer -translate-y-full -translate-x-full group-hover:ease-in group-hover:duration-500 group-hover:translate-x-[0%]"
+        className="hidden h-auto object-cover object-center rounded-lg z-10 cursor-pointer -translate-y-full -translate-x-full group-hover:ease-in group-hover:duration-500 group-hover:translate-x-[0%]"
       />
 
       <ul className='flex'>

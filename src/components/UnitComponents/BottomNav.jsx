@@ -1,6 +1,6 @@
 function BottomNav() {
     return (
-        <div className="bottom-header h-[10vh] flex justify-center items-center border-b-2">
+        <div className="bottom-header py-4 flex justify-center items-center border-b-2">
           <ul className="flex justify-center gap-10">
             <li><a className="hover:text-slate-600" href="#">HOME</a></li>
             <li><a className="hover:text-slate-600" href="#">COLLECTION</a></li>

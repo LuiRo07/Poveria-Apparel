@@ -1,6 +1,9 @@
+import ChatBot from "./chatbot";
+
 function FooterLinks() {
     return (
-        <div className="h-[30vh] bg-[#F2F2F2] p-10 flex flex-col flex-wrap">
+        <div>
+             <div className="h-[30vh] bg-[#F2F2F2] p-10 flex flex-col flex-wrap">
             <ul>
                 <li className="font-semibold mb-12 text-5xl"><h1>POVERIA</h1></li>
                 <li>My Company, 42 Puffin Street Puffinville France</li>
@@ -34,6 +37,8 @@ function FooterLinks() {
                     </form>
                 </li>
             </ul>
+            <ChatBot />
+            </div>
         </div>
     )
 }
