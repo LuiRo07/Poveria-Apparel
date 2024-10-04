@@ -1,8 +1,17 @@
-# React + Vite
+# Poveria Apparel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tech Stack:
+===========
 
-Currently, two official plugins are available:
+* React JS
+* JavaScript
+* Vite 
+* HTML
+* CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features (Aesthetic)
+=====================
+* Hero Section features a carousel slider, that slides displaying various images 
+in a smooth manner.
+
+* Product Cards show interactivity when hovered.
