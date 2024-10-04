@@ -83,7 +83,7 @@ function FooterLinks() {
               <div>
                 <img
                   className="relative left-[186px] top-[36px] cursor-pointer"
-                  src="./src/assets/icons/send.png"
+                  src="/assets/icons/send.png"
                   alt="send icon"
                 />
                 <input

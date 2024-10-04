@@ -1,5 +1,5 @@
-import searchIcon from "../../assets/icons/search.png";
-import downArrow from "../../assets/icons/down-arrow.png";
+import searchIcon from "/assets/icons/search.png";
+import downArrow from "/assets/icons/down-arrow.png";
 
 function toggleDropDownMenu() {
   document.getElementById("DropDownMenu").classList.toggle("hidden");
@@ -8,6 +8,7 @@ function toggleDropDownMenu() {
 function TopNav() {
   return (
     <div className="top-header border-b-2 flex justify-around items-center py-5">
+      {/* desktop nav */}
       <ul className="top-left inline-flex">
         <li className="hover:text-slate-900 text-slate-600 mr-8">
           <a href="#">My Wishlist (0)</a>
