@@ -8,7 +8,7 @@ import rocketShipIcon from "/assets/icons/startup.png";
 
 function ProductCard({ imageUrl, imageAlt, title }) {
   return (
-    <div className="p-2 inline-flex rounded-sm bg-slate-200 overflow-hidden cursor-pointer">
+    <div className="p-2 inline-flex rounded-sm bg-slate-200 overflow-hidden cursor-pointer mb-5">
       <div className="ltr:mr-1 self-center">
         <h3 className="font-semibold mb-4 text-2xl">{title}</h3>
         <a href="#" className="underline">
@@ -26,7 +26,7 @@ function ProductCard({ imageUrl, imageAlt, title }) {
 
 function ServiceIcon({ imageUrl, imageAlt, title, subTitle }) {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center mb-5">
       <div>
         <img
           className="hover:bg-black/50 hover:text-slate-100 bg-slate-600/25 rounded-full size-16 p-4 mr-4 cursor-pointer"
@@ -45,7 +45,7 @@ function ServiceIcon({ imageUrl, imageAlt, title, subTitle }) {
 function FeaturedProductCards() {
   return (
     <div className="border-b-2 py-7 px-4">
-      <div className="w-full py-3.5 flex justify-around gap-11 mb-10">
+      <div className="py-3.5 flex-col flex-nowrap md:justify-around md:gap-11 md:mb-10">
         <ProductCard
           imageUrl={womenPurse}
           imageAlt="Women purse"
@@ -62,7 +62,7 @@ function FeaturedProductCards() {
           title="Party Heels Shoes"
         />
       </div>
-      <div className="w-full py-3.5 flex justify-around gap-2">
+      <div className="py-3.5 flex-col md:flex md:justify-around md:gap-2">
         <ServiceIcon
           imageUrl={moneyBagIcon}
           imageAlt={"bag of money icon"}

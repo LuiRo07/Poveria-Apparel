@@ -14,7 +14,7 @@ const CategoryCard = ({ product }) => {
     };
 
     return (
-        <div className="bg-black max-w-sm cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 relative"
+        <div className="bg-black max-w-sm cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 relative mb-5"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         >
