@@ -2,7 +2,7 @@ import ChatBot from "./chatbot";
 
 function FooterLinks() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="h-[30vh] bg-[#F2F2F2] p-10 flex flex-col flex-wrap">
         <ul>
           <li className="font-semibold mb-12 text-5xl">
