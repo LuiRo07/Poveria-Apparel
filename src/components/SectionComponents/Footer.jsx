@@ -2,7 +2,7 @@ import FooterLinks from "../UnitComponents/FooterLinks";
 
 function Footer() {
     return (
-        <footer>
+        <footer className="p-1 sm:p-0">
             <FooterLinks />
         </footer>
     )

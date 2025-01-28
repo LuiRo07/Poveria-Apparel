@@ -22,7 +22,7 @@ const ProductCard = ({ product }) => {
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="group overflow-y-hidden lg:px-20 md:px-4 x-sm:px-2"
+      className="group overflow-y-hidden md:px-4"
     >
       <img
         src={hovered ? product.imageHover : product.imageDefault}

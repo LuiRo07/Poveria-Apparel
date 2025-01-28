@@ -14,7 +14,7 @@ function NavBar() {
                 <BottomNav />
             </div>
             {/* mobile */}
-            <div className="md:hidden flex justify-between items-center">
+            <div className="md:hidden flex justify-between items-center p-2">
                 <ul className="flex justify-between items-center mb-4">
                     <li className="text-4xl font-medium">
                         <a href="#">Poveria</a>

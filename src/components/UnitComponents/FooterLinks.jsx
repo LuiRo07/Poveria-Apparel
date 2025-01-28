@@ -3,7 +3,7 @@ import ChatBot from "./chatbot";
 function FooterLinks() {
   return (
     <div className="overflow-hidden">
-      <div className="bg-[#F2F2F2] p-5 grid grid-cols-2 gap-8 sm:flex sm:justify-around">
+      <div className="bg-[#F2F2F2] p-5 grid grid-cols-2 gap-6 sm:flex sm:justify-around">
         {/* row-1 */}
         <ul className="flex-col">
           <li className="font-semibold mb-2 sm:mb-4 font-size:4xl">
@@ -71,7 +71,7 @@ function FooterLinks() {
             </a>
           </li>
         </ul>
-        <ul className="flex flex-col justify-center">
+        <ul className="">
           <li className="mb-2 sm:mb-4 font-semibold">
             <h3>GET DAILY UPDATE</h3>
           </li>
@@ -80,23 +80,19 @@ function FooterLinks() {
               Stay Updated On All Thats New and Noteworthy
             </p>
           </li>
-          <li>
-            <form> 
-              <div>
-                <img
-                  className="relative left-[173px] top-[36px] cursor-pointer"
-                  src="/assets/icons/send.png"
-                  alt="send icon"
-                />
-                <input
-                  type="text"
-                  placeholder="Enter Your Email"
-                  className="px-4 py-2 rounded-full"
-                />
-              </div>
-            </form>
-          </li>
         </ul>
+        <form className="col-span-2 justify-center mb-2"> 
+          <img
+            className="relative left-[173px] top-[36px] cursor-pointer"
+            src="/assets/icons/send.png"
+            alt="send icon"
+          />
+          <input
+            type="text"
+            placeholder="Enter Your Email"
+            className="px-4 py-2 rounded-full"
+          />
+        </form>
         <ChatBot />
       </div>
     </div>
