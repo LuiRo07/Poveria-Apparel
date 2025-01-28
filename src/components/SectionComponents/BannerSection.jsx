@@ -16,7 +16,7 @@ function BannerSection() {
   }
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -25,39 +25,41 @@ function BannerSection() {
   };
 
   return (
-    <div class="slider-container" onMouseEnter={pause}>
-      <Slider ref={slider => (sliderRef = slider)} {...settings} >
-        <div>
-          <img src={banner1} alt={"Company Logo"} />
-        </div>
-        <div>
-          <img src={banner2} alt={"Company Logo"} />
-        </div>
-        <div>
-          <img src={banner3} alt={"Company Logo"} />
-        </div>
-        <div>
-          <img src={banner4} alt={"Company Logo"} />
-        </div>
-        <div>
-          <img src={banner5} alt={"Company Logo"} />
-        </div>
-        <div>
-          <img src={banner1} alt={"Company Logo"} />
-        </div>
-        <div>
-          <img src={banner2} alt={"Company Logo"} />
-        </div>
-        <div>
-          <img src={banner3} alt={"Company Logo"} />
-        </div>
-        <div>
-          <img src={banner4} alt={"Company Logo"} />
-        </div>
-        <div>
-          <img src={banner5} alt={"Company Logo"} />
-        </div>
-      </Slider>
+    <div className="overflow-hidden">
+      <div class="slider-container" onMouseEnter={pause}>
+        <Slider ref={slider => (sliderRef = slider)} {...settings} >
+          <div>
+            <img src={banner1} alt={"Company Logo"} />
+          </div>
+          <div>
+            <img src={banner2} alt={"Company Logo"} />
+          </div>
+          <div>
+            <img src={banner3} alt={"Company Logo"} />
+          </div>
+          <div>
+            <img src={banner4} alt={"Company Logo"} />
+          </div>
+          <div>
+            <img src={banner5} alt={"Company Logo"} />
+          </div>
+          <div>
+            <img src={banner1} alt={"Company Logo"} />
+          </div>
+          <div>
+            <img src={banner2} alt={"Company Logo"} />
+          </div>
+          <div>
+            <img src={banner3} alt={"Company Logo"} />
+          </div>
+          <div>
+            <img src={banner4} alt={"Company Logo"} />
+          </div>
+          <div>
+            <img src={banner5} alt={"Company Logo"} />
+          </div>
+        </Slider>
+      </div>
     </div>
   );
 }

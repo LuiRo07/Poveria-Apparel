@@ -27,7 +27,7 @@ const products = [
 
 function FromTheBlog() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -62,7 +62,7 @@ function FromTheBlog() {
   };
 
   return (
-    <div className="mb-11">
+    <div className="mb-11 overflow-hidden">
       <SectionTitle title={"From The Blog"} />
       <div className="slider-container">
         <Slider {...settings}>

@@ -13,36 +13,65 @@ function QuoteSlider() {
         autoplay: true,
         speed: 2500,
         autoplaySpeed: 5000,
-        cssEase: "linear"
+        cssEase: "linear",
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
       };
 
       const divStyling = "py-20 gap-10 flex flex-col justify-center items-center bg-gray-600/50 text-slate-";
-      const quoteStyling = "size-12"
+      const quoteStyling = "size-12";
+      const fontSize = "text-2xl";
     
     return (
-        <Slider {...settings}>
-            <div>
-                <div className={divStyling}>
-                    <RiDoubleQuotesL className={quoteStyling} /> 
-                    <h3 className="text-3xl">Very Good Designing, Flexible. Best Fits</h3>
-                    <span>Tom (Web Developer)</span>
+        <div className="overflow-hidden">
+            <Slider {...settings}>
+                <div>
+                    <div className={divStyling}>
+                        <RiDoubleQuotesL className={quoteStyling} /> 
+                        <h3 className={fontSize}>Very Good Designing, Flexible. Best Fits</h3>
+                        <span>Tom (Web Developer)</span>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div className={divStyling}> 
-                    <RiDoubleQuotesL className={quoteStyling}/> 
-                    <h3 className="text-3xl">Very Good Designing, Flexible. Best Fits</h3>
-                    <span>Tom (Web Developer)</span>
+                <div>
+                    <div className={divStyling}> 
+                        <RiDoubleQuotesL className={quoteStyling}/> 
+                        <h3 className={fontSize}>Very Good Designing, Flexible. Best Fits</h3>
+                        <span>Tom (Web Developer)</span>
+                    </div>
                 </div>
-            </div>
-            <div >
-                <div className={divStyling}> 
-                    <RiDoubleQuotesL className={quoteStyling}/> 
-                    <h3 className="text-3xl">Very Good Designing, Flexible. Best Fits</h3>
-                    <span>Tom (Web Developer)</span>
+                <div >
+                    <div className={divStyling}> 
+                        <RiDoubleQuotesL className={quoteStyling}/> 
+                        <h3 className={fontSize}>Very Good Designing, Flexible. Best Fits</h3>
+                        <span>Tom (Web Developer)</span>
+                    </div>
                 </div>
-            </div>
-    </Slider>
+        </Slider>
+        </div>
     )
 }
 
