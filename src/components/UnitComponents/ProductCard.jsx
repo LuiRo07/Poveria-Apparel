@@ -27,15 +27,7 @@ const ProductCard = ({ product }) => {
       <img
         src={hovered ? product.imageHover : product.imageDefault}
         alt={product.name}
-        className="2-full h-auto object-cover object-center rounded-lg mb-4"
-      />
-
-      {/* testing purpose */}
-
-      <img
-        src={product.imageHover}
-        alt={product.name}
-        className="hidden h-auto object-cover object-center rounded-lg z-10 cursor-pointer -translate-y-full -translate-x-full group-hover:ease-in group-hover:duration-500 group-hover:translate-x-[0%]"
+        className="rounded-lg mb-4"
       />
 
       <ul className="flex">

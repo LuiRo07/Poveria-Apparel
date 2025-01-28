@@ -12,7 +12,7 @@ import backPack from "/assets/images/products/apparel/lightGrey-backpack.jpg";
 import Skirt from "/assets/images/products/apparel/linen-skirt.jpg";
 import pocketShirt from "/assets/images/products/apparel/pocket-shirt.jpg";
 import polkaDotSkirt from "/assets/images/products/apparel/polka-dot-skirt.jpg";
-import SectionTitle from "../UnitComponents/Title";
+import SectionTitle from "../UnitComponents/SectionTitle";
 
 const products = [
   {
@@ -80,7 +80,7 @@ function CardProducts() {
       </ul>
 
       {/* images are mapped */}
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 p-12">
+      <div className="flex flex-col items-center sm:grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 p-12">
         {products.map((product) => (
           <ProductCard key={product.name} product={product} />
         ))}

@@ -1,5 +1,5 @@
 // components
-import SectionTitle from "../UnitComponents/Title";
+import SectionTitle from "../UnitComponents/SectionTitle";
 import FeaturedCard from "../UnitComponents/FeaturedCard";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import Carousel from "react-multi-carousel";
@@ -20,31 +20,26 @@ const products = [
     name: "Coral Double Stripe High",
     price: 33.99,
     imageDefault: blueScarf,
-    imageHover: watch,
   },
   {
     name: "Navy White Stripe Furschia Shirt",
     price: 33.99,
-    imageDefault: pocketShirt,
-    imageHover: whiteShoes,
+    imageDefault: pocketShirt
   },
   {
     name: "Linen-grey Long Skirt",
     price: 33.99,
-    imageDefault: greySkirt,
-    imageHover: jeans,
+    imageDefault: greySkirt
   },
   {
     name: "Winter Trench Coat",
     price: 33.99,
-    imageDefault: trenchCoat,
-    imageHover: denimSweater,
+    imageDefault: trenchCoat
   },
   {
     name: "Spring Shoes",
     price: 55.99,
-    imageDefault: whiteShoes,
-    imageHover: watch,
+    imageDefault: whiteShoes
   },
 ];
 
@@ -69,8 +64,8 @@ function FeaturedSection() {
   return (
     <div>
       <SectionTitle title={"Featured"} />
-      <div>
-        <Carousel responsive={responsive} className="px-20">
+      <div className="px-4">
+        <Carousel responsive={responsive}>
           {products.map((product) => (
             <FeaturedCard key={product.name} product={product} />
           ))}

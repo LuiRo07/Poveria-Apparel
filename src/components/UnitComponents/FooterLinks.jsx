@@ -3,9 +3,10 @@ import ChatBot from "./chatbot";
 function FooterLinks() {
   return (
     <div className="overflow-hidden">
-      <div className="h-[30vh] bg-[#F2F2F2] p-10 flex flex-col flex-wrap">
-        <ul>
-          <li className="font-semibold mb-12 text-5xl">
+      <div className="bg-[#F2F2F2] p-2 flex">
+        {/* row-1 */}
+        <ul className="flex-col">
+          <li className="font-semibold mb-2 sm:mb-12 font-size:6xl sm:text-5xl">
             <h1>POVERIA</h1>
           </li>
           <li>My Company, 42 Puffin Street Puffinville France</li>
@@ -14,8 +15,9 @@ function FooterLinks() {
             <a href="#">Info@YourStore.com</a>
           </li>
         </ul>
-        <ul>
-          <li className="mb-12 font-semibold">
+        {/* row-2 for desktop */}
+        <ul className="hidden sm:block">
+          <li className="mb-2 sm:mb-12 font-semibold">
             <h3>Extras</h3>
           </li>
           <li>
@@ -45,12 +47,12 @@ function FooterLinks() {
           </li>
         </ul>
         <ul>
-          <li className="mb-12 font-semibold">
+          <li className="mb-2 sm:mb-12 font-semibold">
             <h3>MY ACCOUNT</h3>
           </li>
           <li>
             <a className="text-slate-600" href="#">
-              My Account
+              Profile
             </a>
           </li>
           <li>
@@ -70,7 +72,7 @@ function FooterLinks() {
           </li>
         </ul>
         <ul>
-          <li className="mb-12 font-semibold">
+          <li className="mb-2 sm:mb-12 font-semibold">
             <h3>GET DAILY UPDATE</h3>
           </li>
           <li>
@@ -79,7 +81,7 @@ function FooterLinks() {
             </p>
           </li>
           <li>
-            <form>
+            <form> 
               <div>
                 <img
                   className="relative left-[186px] top-[36px] cursor-pointer"

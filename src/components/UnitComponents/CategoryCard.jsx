@@ -21,7 +21,7 @@ const CategoryCard = ({ product }) => {
             <img 
                 src={product.imageDefault}
                 alt={product.name}
-                className="w-full h-full object-cover object-center mb-4"    
+                className="w-full h-full object-cover object-center"    
             />
             <div className={`absolute inset-24 bg-slate-50/80 bg-opacity-50 flex flex-col gap-4 items-center justify-center ${hovered? 'opacity-100' : 'opacity-0'} transition duration-500 ease-in-out`}>
                 <h2 className="text-lg font-medium">{product.name}</h2>

@@ -20,7 +20,7 @@ const products = [
 
 function CategoryList() {
   return (
-    <div className="mt-20 flex-col sm:flex sm:flex-row md:justify-center gap-20 overflow-hidden">
+    <div className="mt-20 flex flex-col items-center sm:flex-row sm:justify-center gap-20 overflow-hidden">
       {products.map((product) => (
         <CategoryCard key={product.name} product={product} />
       ))}

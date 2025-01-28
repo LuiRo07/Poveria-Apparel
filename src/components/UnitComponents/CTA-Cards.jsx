@@ -45,7 +45,7 @@ function ServiceIcon({ imageUrl, imageAlt, title, subTitle }) {
 function FeaturedProductCards() {
   return (
     <div className="border-b-2 py-7 px-4">
-      <div className="py-3.5 flex-col flex-nowrap md:justify-around md:gap-11 md:mb-10">
+      <div className="py-3.5 flex flex-col flex-nowrap sm:flex sm:flex-row sm:justify-around sm:gap-11 sm:mb-10">
         <ProductCard
           imageUrl={womenPurse}
           imageAlt="Women purse"
@@ -62,7 +62,7 @@ function FeaturedProductCards() {
           title="Party Heels Shoes"
         />
       </div>
-      <div className="py-3.5 flex-col md:flex md:justify-around md:gap-2">
+      <div className="py-3.5 flex flex-col sm:flex-row sm:justify-around sm:gap-2">
         <ServiceIcon
           imageUrl={moneyBagIcon}
           imageAlt={"bag of money icon"}

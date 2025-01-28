@@ -1,6 +1,6 @@
 import React from "react";
-import SectionTitle from "../UnitComponents/Title";
 import Slider from "react-slick";
+import SectionTitle from "../UnitComponents/SectionTitle";
 
 // images
 import blog1 from "/assets/images/products/apparel/blog1.jpg";
@@ -27,32 +27,69 @@ const products = [
 
 function FromTheBlog() {
   var settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    SlidesToShow: 3,
-    SlidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
-
-  const divStyling = "flex justify-center px-10 gap-8";
 
   return (
     <div className="mb-11">
       <SectionTitle title={"From The Blog"} />
-      <Slider>
-        <div>
-          <div className={divStyling}>
-            <img className="w-[280px] h-" src={products[0].imageDefault} />
-            <img className="w-[280px] h-auto" src={products[1].imageDefault} />
-            <img className="w-[280px] h-auto" src={products[2].imageDefault} />
+      <div className="slider-container">
+        <Slider {...settings}>
+          <div>
+            <div className="mr-2">
+              <img src={products[0].imageDefault} />
+            </div>
           </div>
-        </div>
-        <div>
-          <img className="w-[280px] h-auto" src={products[3].imageDefault} />
-        </div>
-      </Slider>
+          <div>
+            <div className="mr-2">
+              <img src={products[1].imageDefault} />
+            </div>
+          </div>
+          <div>
+            <div className="mr-2">
+              <img src={products[2].imageDefault} />
+            </div>
+          </div>
+          <div>
+            <div className="mr-2">
+              <img src={products[3].imageDefault} />
+            </div>
+          </div>
+        </Slider>
+      </div>
     </div>
-  );
+  )
 }
 
 export default FromTheBlog;

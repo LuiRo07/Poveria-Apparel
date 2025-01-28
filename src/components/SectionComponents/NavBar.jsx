@@ -5,10 +5,10 @@ import MobileMenu from '../Mobile/MobileMenu';
 import { useState } from 'react';
 
 function NavBar() {
-    const [open, setOpen ] = useState(true);
+    const [open, setOpen ] = useState(false);
     return (
-        // desktop
         <>
+            {/* Desktop */ } 
             <div className="md:block hidden">
                 <TopNav />
                 <BottomNav />

@@ -6,24 +6,21 @@ import { CiStar } from 'react-icons/ci';
 const FeaturedCard = ({ product }) => {
 
     return (
-        <div>
+        <div className="mr-4">
             <div>
                 <img src={product.imageDefault} 
                     alt={product.name}
                 />
             </div>
-            <div className="mb-4">
-                <img className="hidden" src={product.imageHover} />
-            </div>
-            <ul className="flex">
+            <ul className="flex my-2">
                 <li><FaStar /></li>
                 <li><FaStar /></li>
                 <li><FaStar /></li>
                 <li><CiStar /></li>
                 <li><CiStar /></li>
             </ul>
-            <h2 className="text-lg font-medium text-gray-900 mb-2">{product.name}</h2>
-            <p className="text-xl font-medium text-gray-900">${product.price}</p>
+            <h2 className="text-lg font-normal text-gray-900 mb-2">{product.name}</h2>
+            <p className="text-xl font-normal text-gray-900">${product.price}</p>
         </div>
     )
 }

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 function ImageSlider() {
+  // hero section
   const slides = [
     {
       url:
