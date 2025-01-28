@@ -62,7 +62,7 @@ function FeaturedSection() {
   };
 
   return (
-    <div>
+    <div className="mb-4">
       <SectionTitle title={"Featured"} />
       <div className="px-4">
         <Carousel responsive={responsive}>

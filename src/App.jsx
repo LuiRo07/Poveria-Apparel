@@ -16,11 +16,11 @@ function App() {
       <ImageSlider />
       <FeaturedProductCards />
       <CardProducts />
-      <QuoteSlider />
+      {/* <QuoteSlider /> */}
       <CategoryList />
       <FeaturedSection />
-      <FromTheBlog />
-      <BannerSection />
+      {/* <FromTheBlog /> */}
+      {/* <BannerSection /> */}
       <Footer />
     </div>
   )

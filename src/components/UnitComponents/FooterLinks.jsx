@@ -3,11 +3,11 @@ import ChatBot from "./chatbot";
 function FooterLinks() {
   return (
     <div className="overflow-hidden">
-      <div className="bg-[#F2F2F2] p-2 flex">
+      <div className="bg-[#F2F2F2] p-5 grid grid-cols-2 gap-8 sm:flex sm:justify-around">
         {/* row-1 */}
         <ul className="flex-col">
-          <li className="font-semibold mb-2 sm:mb-12 font-size:6xl sm:text-5xl">
-            <h1>POVERIA</h1>
+          <li className="font-semibold mb-2 sm:mb-4 font-size:4xl">
+            <h1 className="font-semibold mb-2 ">POVERIA</h1>
           </li>
           <li>My Company, 42 Puffin Street Puffinville France</li>
           <li>(+91) 0123 456 789</li>
@@ -16,8 +16,8 @@ function FooterLinks() {
           </li>
         </ul>
         {/* row-2 for desktop */}
-        <ul className="hidden sm:block">
-          <li className="mb-2 sm:mb-12 font-semibold">
+        <ul className="">
+          <li className="mb-2 sm:mb-4 font-semibold">
             <h3>Extras</h3>
           </li>
           <li>
@@ -47,7 +47,7 @@ function FooterLinks() {
           </li>
         </ul>
         <ul>
-          <li className="mb-2 sm:mb-12 font-semibold">
+          <li className="mb-2 sm:mb-4 font-semibold">
             <h3>MY ACCOUNT</h3>
           </li>
           <li>
@@ -71,8 +71,8 @@ function FooterLinks() {
             </a>
           </li>
         </ul>
-        <ul>
-          <li className="mb-2 sm:mb-12 font-semibold">
+        <ul className="flex flex-col justify-center">
+          <li className="mb-2 sm:mb-4 font-semibold">
             <h3>GET DAILY UPDATE</h3>
           </li>
           <li>
@@ -84,14 +84,14 @@ function FooterLinks() {
             <form> 
               <div>
                 <img
-                  className="relative left-[186px] top-[36px] cursor-pointer"
+                  className="relative left-[173px] top-[36px] cursor-pointer"
                   src="/assets/icons/send.png"
                   alt="send icon"
                 />
                 <input
                   type="text"
                   placeholder="Enter Your Email"
-                  className="px-6 py-2 rounded-full"
+                  className="px-4 py-2 rounded-full"
                 />
               </div>
             </form>
