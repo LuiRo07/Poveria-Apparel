@@ -36,3 +36,7 @@ desktop screen.
 - An image carousel that runs infinitely.
 
 - The footer includes a chatbot visual and an input field for an email for a weekly newsletter subscription.
+
+## Live Demo
+
+[text](https://poveria-apparel.netlify.app/)
