@@ -10,7 +10,7 @@ site. It also features lots of different cool features like a carousel image sli
 slides to next image. Other features include hovering effects that could be used on a
 desktop screen.
 
-# Tech Stack:
+## Tech Stack:
 
 - React JS
 - Tailwind CSS
