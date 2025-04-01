@@ -39,4 +39,4 @@ desktop screen.
 
 ## Live Demo
 
-[text](https://poveria-apparel.netlify.app/)
+[Click here to launch site](https://poveria-apparel.netlify.app/)
